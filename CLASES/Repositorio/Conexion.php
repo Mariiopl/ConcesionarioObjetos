@@ -1,11 +1,14 @@
 <?php
-//private static PDO con = null;   //con va a ser de tipo PDO
+class Conexion{
+    private static $con = null;
 
-// public static function getConection():PDO
-//{
-    //if (con==null)
-    //{
-    //    con = new PDO("Cadena de conexion")
-    //}
-    //return con;
-//}
+    public static function getConection():PDO{
+        if (self::$con == null){
+
+            //Conseguir cadena de conexión
+            self::$con = new PDO("mysql:host=localhost;dbname=Prueba",'root','root');
+        }
+        return self::$con;
+    }
+
+}

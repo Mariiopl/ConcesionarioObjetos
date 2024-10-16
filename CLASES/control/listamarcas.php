@@ -6,7 +6,6 @@
 // Obtencion de datos o realizar operacion
 //Actualizo vista Pintor.pintamarcas($marcas)
 //                Pintor.pinta($arra,listado.html)
-
 // Incluir los archivos necesarios
 include_once __DIR__ . '/../repositorio/RepoMarca.php';   // Ajusta la ruta para acceder correctamente al repositorio
 include_once __DIR__ . '/../vista/Pintor.php';
